@@ -1,0 +1,122 @@
+function autoScroll(){
+    var a=$(this).attr("rel");
+    $("#myslide_new .cover").animate({
+        left:-215*(parseInt(a)-1)
+        });
+    $("#button a").each(function(){
+        $(this).removeClass("active");
+        if($(this).hasClass("button"+a)){
+            $(this).addClass("active")
+        }
+    })
+}
+
+function RemoveSearchText(text) {
+    var x = document.getElementById(text);
+    x.value ='';
+}
+   
+function highlightSearch(id, tagname, text, button) {
+    try {
+        var x = document.getElementById(id);
+        var y = x.getElementsByTagName(tagname);
+        //var z = x.getElementsByTagName('span');
+        var searchVal = document.getElementById(text).value;
+   
+        if (searchVal.value == '') {
+            button = 'clear';
+        }
+   
+        if (button == 'search') {
+            for (i=0; i<y.length; i++) {
+                y[i].style.display = "block";
+   
+                var patternMatch = new RegExp(searchVal, "i");
+   
+                if (!patternMatch.test(y[i].innerHTML)) {
+                    y[i].style.display = "none";
+                }
+            }
+        }
+        else {
+            for(i=0; i<y.length; i++) {
+                y[i].style.display = "block";
+            }
+        }
+    }
+    catch(err) {
+    //alert("NO SUCH "+id+" EXIT ");
+    }
+}
+
+function submit_search_form() {
+    var search_string = $('#q,#s');
+    var search_string_value = $('#q,#s').val();
+    var filtered_string = search_string_value.replace(/-/g, '~').replace(/[^a-zA-Z0-9~ ]/g, '').replace(/[^a-zA-Z0-9~]/g, '-');
+    if (filtered_string == '') {
+        alert('Please enter search query');
+        search_string.focus();
+    } else {
+        window.location = 'http://www.ndtv.com/topic/' + filtered_string;
+    }
+}
+
+function JS_IOS_Mobile_Redirect() {
+  user_mobile = (navigator.userAgent).toLowerCase();
+  var mobile_array=new Array('iphone', 'ipad');
+  for (i in mobile_array) {
+    if (user_mobile.indexOf(mobile_array[i]) >= 0) {
+      return true;
+    }
+  }
+  return false;
+}
+
+var win = null;
+    function NewWindow(mypage, myname, w, h, scroll, pos) {
+        if (pos == "random") {
+            LeftPosition = (screen.width) ? Math.floor(Math.random() * (screen.width - w)) : 100;
+            TopPosition = (screen.height) ? Math.floor(Math.random() * ((screen.height - h) - 75)) : 100;
+        }
+        if (pos == "center") {
+            LeftPosition = (screen.width) ? (screen.width - w) / 2 : 100;
+            TopPosition = (screen.height) ? (screen.height - h) / 2 : 100;
+        }
+        else if ((pos != "center" && pos != "random") || pos == null) {
+            LeftPosition = 0;
+            TopPosition = 20
+        }
+        settings = 'width=' + w + ',height=' + h + ',top=' + TopPosition + ',left=' + LeftPosition + ',scrollbars=' + scroll + ',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
+        win = window.open(mypage, myname, settings);
+    }
+
+
+var timeout_intrvl;
+var timeout_intrvl_count =0 ;
+function resizeIframe(iframe) {
+    iframe.height = (iframe.contentWindow.document.body.scrollHeight +4)+ "px";
+    timeout_intrvl = setInterval(function(){_resizeIframe(iframe)},2000*30);
+}
+
+function _resizeIframe(iframe) {
+    timeout_intrvl_count++;
+    iframe.height = (iframe.contentWindow.document.body.scrollHeight +4)+ "px";
+    //clearTimeout(timeout_intrvl);
+}
+
+function isFlashAvailable() {
+    var support = false;
+    //IE only
+    if("ActiveXObject" in window) {
+        try{
+            support = !!(new ActiveXObject("ShockwaveFlash.ShockwaveFlash"));
+        }catch(e){
+            support = false;
+        }
+
+    //W3C, better support in legacy browser
+    } else {
+        support = !!navigator.mimeTypes['application/x-shockwave-flash'];
+    }
+    return support;
+}
