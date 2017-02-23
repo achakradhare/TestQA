@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<content connectType="Marketo" sourceType="Email" sourceName="Same as source" sourceId="2679">
-    <field id="2679" name="subject" translate="true" maxLength="0" metadata="false"><![CDATA[Bläãnk]]></field>
-    <field id="edit_text_1" name="html" translate="true" maxLength="0" metadata="false"><![CDATA[<p>Têést thêé scêénåârîìõõ</p>]]></field>
-    <field id="edit_text_1" name="text" translate="true" maxLength="0" metadata="false"><![CDATA[Têést thêé scêénáárîîôõ]]></field>
-    <field id="edit_text_2" name="html" translate="true" maxLength="0" metadata="false"><![CDATA[<p>Chêëck thêë sòòûýrcêë</p>]]></field>
-    <field id="edit_text_2" name="text" translate="true" maxLength="0" metadata="false"><![CDATA[Chééck théé sòõùûrcéé]]></field>
-</content>
