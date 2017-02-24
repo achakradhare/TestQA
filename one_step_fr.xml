@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <content connectType="Marketo" sourceType="Email" sourceName="one step" sourceId="2604">
-    <field id="2604" name="subject" translate="true" maxLength="0" metadata="false"><![CDATA[Blãänk]]></field>
-    <field id="edit_text_1" name="html" translate="true" maxLength="0" metadata="false"><![CDATA[<p>chééck òónéé stéép òón qâã3</p>]]></field>
-    <field id="edit_text_1" name="text" translate="true" maxLength="0" metadata="false"><![CDATA[chêêck ôõnêê stêêp ôõn qäâ3]]></field>
-    <field id="edit_text_2" name="html" translate="true" maxLength="0" metadata="false"><![CDATA[<p>têëst 1 stêëp óôn PD5</p>]]></field>
-    <field id="edit_text_2" name="text" translate="true" maxLength="0" metadata="false"><![CDATA[têèst 1 stêèp òón PD5]]></field>
+    <field id="2604" name="subject" translate="true" maxLength="0" metadata="false"><![CDATA[Blæânk]]></field>
+    <field id="edit_text_1" name="html" translate="true" maxLength="0" metadata="false"><![CDATA[<p>chééck òònéé stéép òòn qâã3</p>]]></field>
+    <field id="edit_text_1" name="text" translate="true" maxLength="0" metadata="false"><![CDATA[chêêck õönêê stêêp õön qáä3]]></field>
+    <field id="edit_text_2" name="html" translate="true" maxLength="0" metadata="false"><![CDATA[<p>tèêst 1 stèêp òön PD5</p>]]></field>
+    <field id="edit_text_2" name="text" translate="true" maxLength="0" metadata="false"><![CDATA[tëèst 1 stëèp ôõn PD5]]></field>
 </content>
