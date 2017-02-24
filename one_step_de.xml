@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<content connectType="Marketo" sourceType="Email" sourceName="one step" sourceId="2604">
+    <field id="2604" name="subject" translate="true" maxLength="0" metadata="false"><![CDATA[Blåånk]]></field>
+    <field id="edit_text_1" name="html" translate="true" maxLength="0" metadata="false"><![CDATA[<p>chéèck òônéè stéèp òôn qäâ3</p>]]></field>
+    <field id="edit_text_1" name="text" translate="true" maxLength="0" metadata="false"><![CDATA[chêèck ôönêè stêèp ôön qáâ3]]></field>
+    <field id="edit_text_2" name="html" translate="true" maxLength="0" metadata="false"><![CDATA[<p>tèést 1 stèép õõn PD5</p>]]></field>
+    <field id="edit_text_2" name="text" translate="true" maxLength="0" metadata="false"><![CDATA[têèst 1 stêèp òön PD5]]></field>
+</content>
