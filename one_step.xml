@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<content connectType="Marketo" sourceType="Email" sourceName="one step" sourceId="2604">
+    <field id="2604" name="subject" translate="true" maxLength="0" metadata="false"><![CDATA[Blank]]></field>
+    <field id="edit_text_1" name="html" translate="true" maxLength="0" metadata="false"><![CDATA[<p>check one step on qa3</p>]]></field>
+    <field id="edit_text_1" name="text" translate="true" maxLength="0" metadata="false"><![CDATA[check one step on qa3]]></field>
+    <field id="edit_text_2" name="html" translate="true" maxLength="0" metadata="false"><![CDATA[<p>test 1 step on PD5</p>]]></field>
+    <field id="edit_text_2" name="text" translate="true" maxLength="0" metadata="false"><![CDATA[test 1 step on PD5]]></field>
+</content>
